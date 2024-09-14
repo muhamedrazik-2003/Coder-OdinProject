@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Trebuchet MS';
 }
 
 
@@ -11,7 +11,7 @@
     flex-direction: column;
     width: 100%;
     flex: 1;
-    background:#1F2937 ;
+    background:#000000 ;
     padding: 16px 120px 120px;
     
  } 
@@ -23,25 +23,25 @@
     justify-content: flex-end; 
     margin-bottom: 100px;
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .logo {
     margin-right: auto;
     font-weight: 900;
-    color: #ffffff;
+    color: #8400ff;
 
 }
 ul.nav,
 a {
     list-style-type: none;
-    color: #bab9b9;
+    color: #8400ff;
     text-decoration: none;
 }
 .main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 56px;
+    padding-bottom: 52px;
+    padding-top: 16px;
     gap:2rem;
     
 }
@@ -54,26 +54,26 @@ h1 {
 p {
     font-size: 18px;
     max-width: 350px;
-    color: #bab9b9;
+    color: #91ff00;
 }
 .image-placeholder {
     display: flex;
     flex: 1;
-    padding: 75px 200px;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
     justify-content: center;
     align-items: center;
-    background: rgba(116, 116, 116, 0.678);
+    
 }
 
 button {
     cursor: pointer;
     margin-top: 16px;
-    padding: 4px 24px;
+    padding: 4px 32px;
     border-radius: 8px;
     color: #ffffff;
-    background-color: #3882f6;
-    border: 2px solid #3882f6;
+    font-weight: bolder;
+    background-color: #8400ff;
+    border: 2px solid #8400ff;
 }
 
 .information {
@@ -84,9 +84,9 @@ button {
 h2 {
     display: flex;
     justify-content: center;
-    padding-bottom:40px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+    padding:24px 0 62px;
+    font-size: 32px;
+    font-weight: 900;
 
 }
 
@@ -94,17 +94,21 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2rem;
+    gap: 48px;
     padding-bottom: 40px;
 }
+
 .box {
     flex:0;
     border-radius: 8px;
-    padding: 72px ;
-    background: #ffffff;
-    border: 4px solid #3882f6;
+    background-color: #ffffff;
+    border: 5px solid #8400ff;
+    margin: 0 42px 8px;
 }
+
 .text {
+    width: 250px;
     text-align: center;
-    width: 150px;
+    font-weight: 700;
+    
 }
