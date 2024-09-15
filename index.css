@@ -40,10 +40,9 @@ a {
 .main-content {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-bottom: 52px;
     padding-top: 16px;
-    gap:2rem;
+    gap:3rem;
     
     
 }
@@ -57,14 +56,6 @@ p {
     font-size: 20px;
     max-width: 420px;
     color: #91ff00;
-}
-.image-placeholder {
-    display: flex;
-    flex: 1;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 .main-content button {
@@ -177,4 +168,15 @@ h2 {
     border: 2px solid #8400ff;
     flex-shrink: 0;
     max-height: 67px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: #000000;
+    color: #8400ff;
 }
