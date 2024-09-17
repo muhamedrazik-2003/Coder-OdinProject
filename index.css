@@ -13,6 +13,7 @@
     flex: 1;
     background:#000000 ;
     padding: 16px 120px 120px;
+    justify-content: center;
     
     
  } 
@@ -53,9 +54,9 @@ h1 {
     color: #ffffff;
 }
 p {
-    font-size: 20px;
+    font-size: 18px;
     max-width: 420px;
-    color: #91ff00;
+    color: #ffffff;
 }
 
 .main-content button {
@@ -112,8 +113,8 @@ h2 {
     background: rgb(0, 0, 0);
     width: 100%;
     flex: 1;
-    padding: 70px 120px;
-    color: #91ff00;
+    padding: 100px 120px;
+    color: #ffffff;
     font-size: 20px;
     text-align: center;
     font-style: italic;
@@ -140,9 +141,9 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color:#cacaca;
-    padding: 70px 100px;
+    padding: 140px 100px;
     color: #000000;
-    font-size: 18px;
+    font-size: 16px;
     
 }
 .signup-box {
@@ -176,7 +177,12 @@ h2 {
     gap: 4px;
     justify-content: center;
     align-items: center;
-    padding: 24px;
-    background: #000000;
-    color: #8400ff;
+    padding: 14px;
+    background: #888888;
+    color: #000000;
+}
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 800;
 }
