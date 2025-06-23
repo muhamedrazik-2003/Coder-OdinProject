@@ -79,7 +79,9 @@
      font-style: normal;
  }
 
- a {
+ a,
+ li {
+     list-style: none;
      text-decoration: none;
  }
 
@@ -99,7 +101,6 @@
      color: rgba(255, 255, 255, 0.03);
      z-index: 0;
      pointer-events: none;
-
      font-family: "Sometype Mono", monospace;
  }
 
@@ -112,7 +113,6 @@
      color: rgba(255, 255, 255, 0.03);
      z-index: -1;
      pointer-events: none;
-
      font-family: "Sometype Mono", monospace;
  }
 
@@ -131,7 +131,21 @@
 
  nav ul {
      display: flex;
-     gap: 72px;
+     gap: 80px;
+ }
+ nav ul li {
+     transition: all 150ms ease;
+
+ }
+
+ nav ul li:hover {
+     color: #a078ff;
+     border-bottom: 1px solid;
+     transform: translateY(-4px);
+ }
+ nav ul li:active {
+     /* color: #5d18ff; */
+     transform: scale(0.9);
  }
 
  #hero-section {
@@ -160,11 +174,13 @@
      gap: 24px;
      background: linear-gradient(45deg, #220061, #180049, #310188);
      border-radius: 56px;
-     padding: 24px;
+     padding: 24px 28px;
      flex-wrap: wrap;
  }
+
  #hero-cta p {
-    color: #a49db1;
+     color: #a49db1;
+     font-size: 15px;
  }
 
  #hero-cta button {
@@ -175,8 +191,18 @@
      background-color: #c1a7fd;
      border: 1px solid #080017;
      padding: 8px 28px;
-     border-radius: 64px;
+     border-radius: 40px;
      color: rgb(0, 0, 0);
+     transition: all 150ms ease;
+ }
+ #hero-cta button:hover {
+     background-color: #966bf9;
+    transform: translateY(-4px);
+    box-shadow: 0 4px ;
+ }
+ #hero-cta button:active {
+    transform: translateY(0px);
+    box-shadow: 0 0 ;
  }
 
  /* .header {
@@ -365,9 +391,6 @@
 
  footer a {
      color: #ffffff;
-     text-decoration: none; 
-     padding: 0 8px;
-     margin: 0 8px;
-     border-right: 1px solid white;
+     text-decoration: none;
      font-weight: 800;
- } 
+ }
