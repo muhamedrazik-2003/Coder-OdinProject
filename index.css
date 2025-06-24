@@ -172,7 +172,8 @@
 
  #hero-section h1,
  #joinNow-cta-section h2 {
-     font-size: 60px;
+     /* font-size: 60px; */
+     font-size: clamp(2rem, 5vw, 3.75rem);
      line-height: 1.1;
      margin-bottom: 48px;
  }
@@ -475,8 +476,6 @@
      margin-bottom: 8px;
  }
 
- .joining-benefits .icon-title h4 {}
-
  footer {
      display: flex;
      font-size: 0.9rem;
@@ -492,4 +491,68 @@
      color: #ffffff;
      text-decoration: none;
      font-weight: 800;
+ }
+
+ @media (max-width:480px) {
+     header {
+         padding: 20px 40px;
+     }
+
+     header::before {
+         content: "0101";
+         font-size: 8rem;
+     }
+
+     header::after {
+         content: "0101";
+         font-size: 8rem;
+         bottom: 55%;
+     }
+     p {
+        line-height: 1.8 !important;
+     }
+
+     #hero-section,
+     #courses-section,
+     #quotes-section,
+     #joinNow-cta-section {
+         margin: 64px auto 140px;
+     }
+
+     #hero-section h1,
+     #joinNow-cta-section h2 {
+         margin-bottom: 62px;
+     }
+
+     #hero-section h2,
+     #joinNow-cta-section h3 {
+         font-size: 18px;
+         line-height: 1.8;
+         margin-bottom: 62px;
+     }
+
+     #hero-cta {
+         text-align: center;
+         padding: 24px;
+         margin: 0 20px;
+         border-radius: 32px;
+     }
+
+     #hero-cta p {
+         font-size: 1rem;
+         padding-top: 12px;
+     }
+
+     .scroll-track .scroll-elements {
+         padding: 32px 0;
+         font-size: 1rem;
+     }
+
+     .scroll-track svg {
+         width: 1rem;
+     }
+
+     nav {
+         display: none;
+     }
  }
