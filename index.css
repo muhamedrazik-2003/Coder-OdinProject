@@ -270,9 +270,9 @@
      background-color: #250068;
      z-index: -1;
 
-     box-shadow: 
-        0 -6px 0 0 #0c0028,
-        0 -8px 0 0 #320096;
+     box-shadow:
+         0 -6px 0 0 #0c0028,
+         0 -8px 0 0 #320096;
  }
 
 
@@ -363,28 +363,40 @@
 
  /* qoutes section */
  #quotes-section {
+     position: relative;
      max-width: 100vw;
      margin: 0;
-     padding: 72px 172px 172px;
+     padding: 72px 140px 172px;
      /* background-color: #250068; */
-     background: linear-gradient(180deg, #250068,#16003b, #130039,#0d0027);
+     background: linear-gradient(180deg, #250068, #16003b, #130039, #0d0027);
+     z-index: 1;
+ }
 
-
+ .floating-quote {
+     position: absolute;
+     top:-10%;
+     left: 15%;
+     transform: rotate(-185deg);
+     color: #4a03d7;
+     opacity: 0.08;
+     z-index: -1;
  }
 
  .quotes-container {
      grid-template-columns: repeat(2, 1fr);
+     gap: 1.1rem;
      padding: auto;
  }
 
  .quote-card {
-     padding: 24px 20px;
-     /* color: rgb(0, 0, 0); */
-     /* background-color: rgba(68, 0, 255, 0.5); */
+     padding: 1.25rem 1rem;
+     line-height: 1.4;
+     background: linear-gradient(45deg, #250068, #4300b7, #1a004d);
+
  }
 
  .quotes {
-     min-height: 90px;
+     min-height: 72px;
      font-size: 1.1rem;
      font-weight: 700;
      font-style: italic;
