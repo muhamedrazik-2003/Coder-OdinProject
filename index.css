@@ -135,19 +135,23 @@
  }
 
  nav ul li {
-     transition: all 150ms ease;
-
+     padding: 4px 6px;
+     border-radius: 4px;
+     transition: all 200ms ease;
+     cursor: pointer;
  }
 
  nav ul li:hover {
-     color: #a078ff;
-     border-bottom: 1px solid;
-     transform: translateY(-4px);
+     color: #bfa3ff;
+     background-color: #100031;
+     box-shadow: 2px 4px #bfa3ff;
+     transform: translateY(-4px) translateX(-2px);
  }
-
- nav ul li:active {
-     /* color: #5d18ff; */
-     transform: scale(0.9);
+ nav ul li:active,
+ #hero-cta button:active,
+ .course-card:active {
+     transform: translateY(0px);
+     box-shadow: 0 0;
  }
 
  #hero-section,
@@ -197,18 +201,13 @@
      padding: 8px 28px;
      border-radius: 40px;
      color: rgb(0, 0, 0);
-     transition: all 150ms ease;
+     transition: all 200ms ease;
  }
 
  #hero-cta button:hover {
      background-color: #966bf9;
-     transform: translateY(-4px);
-     box-shadow: 0 4px;
- }
-
- #hero-cta button:active {
-     transform: translateY(0px);
-     box-shadow: 0 0;
+     transform: translateY(-4px) translateX(-2px);
+     box-shadow: 2px 4px;
  }
 
  .scroll-container {
@@ -247,6 +246,7 @@
 
  /* courses section */
  #courses-section {
+     position: relative;
      max-width: 1080px;
  }
 
@@ -266,13 +266,20 @@
  }
 
  .course-card {
-     padding: 24px 16px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding: 24px 16px 0;
      background-color: #180049;
      border: 1px solid #4a03d7;
      border-radius: 20px;
-
      font-size: 0.9rem;
      text-align: start;
+     transition: all 200ms ease;
+ }
+
+ .card-content {
+     min-height: 200px;
  }
 
  .course-card p {
@@ -294,6 +301,33 @@
  .icon-title svg {
      margin-top: 2px;
      width: 18px;
+ }
+
+ .card-footer {
+     display: flex;
+     justify-content: space-between;
+     font-size: 0.8rem;
+     padding: 8px;
+     border-top: 1px solid #4a03d7;
+ }
+
+ .card-footer svg {
+     width: 16px;
+ }
+
+ .card-footer div {
+     display: flex;
+     gap: 4px;
+ }
+
+ .card-footer p {
+     color: white;
+ }
+
+ .course-card:hover {
+     transform: translateY(-6px) translateX(-3px);
+     cursor: pointer;
+     box-shadow: 3px 6px #a078ff;
  }
 
  /* .header {
