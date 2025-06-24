@@ -72,7 +72,8 @@
  }
 
  h1,
- h2 {
+ h2,
+ #joinNow-cta-subHeading {
      font-family: "Sometype Mono", monospace;
      font-optical-sizing: auto;
      font-weight: 900;
@@ -139,17 +140,19 @@
      border-radius: 4px;
      transition: all 200ms ease;
      cursor: pointer;
+     color: #dfd2ff;
+     letter-spacing: 1.5px;
  }
 
  nav ul li:hover {
-     color: #bfa3ff;
+     color: #b08ffd;
      background-color: #100031;
-     box-shadow: 2px 4px #bfa3ff;
+     box-shadow: 2px 4px #b08ffd;
      transform: translateY(-4px) translateX(-2px);
  }
 
  nav ul li:active,
- #hero-cta button:active,
+ button:active,
  .course-card:active {
      transform: translateY(0px);
      box-shadow: 0 0;
@@ -157,20 +160,23 @@
 
  #hero-section,
  #courses-section,
- #quotes-section {
+ #quotes-section,
+ #joinNow-cta-section {
      text-align: center;
      width: 100%;
      max-width: 860px;
      margin: 72px auto 172px;
  }
 
- #hero-section h1 {
+ #hero-section h1,
+ #joinNow-cta-section h2 {
      font-size: 60px;
      line-height: 1.1;
      margin-bottom: 48px;
  }
 
- #hero-section h2 {
+ #hero-section h2,
+ #joinNow-cta-section h3 {
      font-size: 20px;
      margin-bottom: 48px;
  }
@@ -193,7 +199,7 @@
      color: #a49db1;
  }
 
- #hero-cta button {
+ button {
      display: flex;
      align-items: center;
      gap: 8px;
@@ -206,7 +212,7 @@
      transition: all 200ms ease;
  }
 
- #hero-cta button:hover {
+ button:hover {
      background-color: #966bf9;
      transform: translateY(-4px) translateX(-2px);
      box-shadow: 2px 4px;
@@ -248,7 +254,8 @@
 
  /* courses section */
  #courses-section,
- #quotes-section {
+ #quotes-section,
+ #joinNow-cta-section {
      max-width: 1080px;
  }
 
@@ -366,7 +373,7 @@
      position: relative;
      max-width: 100vw;
      margin: 0;
-     padding: 72px 140px 172px;
+     padding: 72px 140px 130px;
      /* background-color: #250068; */
      background: linear-gradient(180deg, #250068, #16003b, #130039, #0d0027);
      z-index: 1;
@@ -391,7 +398,7 @@
  .quote-card {
      padding: 1.25rem 1rem;
      line-height: 1.4;
-     background: linear-gradient(105deg, #250068, #34018c, #170045);
+     background: linear-gradient(270deg, #250068, #34018c, #170045);
  }
 
  .quotes {
@@ -409,6 +416,21 @@
  .author strong {
      font-weight: 900;
  }
+
+ /* join now cta section */
+.joinNow-cta-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.joining-benefits .icon-title {
+    margin-bottom: 8px;
+}
+.joining-benefits .icon-title h3{
+    margin-bottom: 0 !important;
+    padding: 0  !important;
+}
 
  footer {
      display: flex;
