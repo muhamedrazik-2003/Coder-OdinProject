@@ -247,7 +247,6 @@
 
  /* courses section */
  #courses-section {
-     /* background-color: red; */
      max-width: 1080px;
  }
 
@@ -256,30 +255,45 @@
      font-size: 32px;
      align-items: center;
      justify-content: center;
+     margin-bottom: 16px;
  }
 
  .courses-container {
      display: grid;
      grid-template-columns: repeat(4, 1fr);
-     gap: 16px;
+     gap: 24px;
+     margin-top: 56px;
  }
 
  .course-card {
-     text-align: center;
-     padding: 16px;
+     padding: 24px 16px;
+     background-color: #180049;
      border: 1px solid #4a03d7;
+     border-radius: 20px;
+
+     font-size: 0.9rem;
+     text-align: start;
+ }
+
+ .course-card p {
+     color: #c5acff;
  }
 
  .icon-title {
      display: flex;
-     align-items: center;
-     margin-bottom: 24px;
-     /* flex-direction: column; */
-     /* gap: 16px; */
+     gap: 8px;
      text-align: left;
+     margin-bottom: 16px;
  }
+
+ .icon-title h3 {
+     width: 90%;
+     font-size: 1.1rem;
+ }
+
  .icon-title svg {
-    width: 24px;
+     margin-top: 2px;
+     width: 18px;
  }
 
  /* .header {
