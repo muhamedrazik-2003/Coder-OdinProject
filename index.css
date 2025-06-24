@@ -150,11 +150,12 @@
      transform: scale(0.9);
  }
 
- #hero-section {
+ #hero-section,
+ #courses-section {
      text-align: center;
      width: 100%;
-     max-width: 960px;
-     margin: 72px auto;
+     max-width: 860px;
+     margin: 72px auto 172px;
  }
 
  #hero-section h1 {
@@ -180,8 +181,9 @@
      flex-wrap: wrap;
 
  }
+
  #hero-cta p {
-    font-size: 0.9rem;
+     font-size: 0.9rem;
      color: #a49db1;
  }
 
@@ -208,34 +210,76 @@
      transform: translateY(0px);
      box-shadow: 0 0;
  }
+
  .scroll-container {
-    overflow-x: hidden;
-    white-space: nowrap;
+     overflow-x: hidden;
+     white-space: nowrap;
  }
+
  .scroll-track {
-    display: flex;
-    animation: scroll-left 20s linear infinite;
+     display: flex;
+     animation: scroll-left 20s linear infinite;
  }
- .scroll-track .scroll-elements{
-    display: flex;
-    align-items: center;
-    padding: 12px 0;
-    gap: 12px;
-    font-size: 0.8rem;
-    color: #8a62d5;
-    flex-shrink: 0;
+
+ .scroll-track .scroll-elements {
+     display: flex;
+     align-items: center;
+     padding: 12px 0;
+     gap: 12px;
+     font-size: 0.8rem;
+     color: #c2a2fe;
+     flex-shrink: 0;
  }
+
  .scroll-track svg {
-    width: 0.8rem;
+     width: 0.8rem;
  }
 
  @keyframes scroll-left {
-    0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+     0% {
+         transform: translateX(0%);
+     }
+
+     100% {
+         transform: translateX(-100%);
+     }
+ }
+
+ /* courses section */
+ #courses-section {
+     /* background-color: red; */
+     max-width: 1080px;
+ }
+
+ #courses-section h1 {
+     display: flex;
+     font-size: 32px;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .courses-container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 16px;
+ }
+
+ .course-card {
+     text-align: center;
+     padding: 16px;
+     border: 1px solid #4a03d7;
+ }
+
+ .icon-title {
+     display: flex;
+     align-items: center;
+     margin-bottom: 24px;
+     /* flex-direction: column; */
+     /* gap: 16px; */
+     text-align: left;
+ }
+ .icon-title svg {
+    width: 24px;
  }
 
  /* .header {
