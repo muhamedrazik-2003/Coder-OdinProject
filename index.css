@@ -286,7 +286,8 @@
  #courses-section h1,
  #quotes-section h1 {
      display: flex;
-     font-size: 32px;
+     /* font-size: 32px; */
+     font-size: clamp(1.3rem, 4vw, 2rem);
      align-items: center;
      gap: 8px;
      justify-content: center;
@@ -498,6 +499,10 @@
          padding: 20px 40px;
      }
 
+     nav {
+         display: none;
+     }
+
      header::before {
          content: "0101";
          font-size: 8rem;
@@ -508,14 +513,16 @@
          font-size: 8rem;
          bottom: 55%;
      }
+
      p {
-        line-height: 1.8 !important;
+         line-height: 1.8 !important;
      }
 
      #hero-section,
      #courses-section,
      #quotes-section,
      #joinNow-cta-section {
+        padding: 0 32px;
          margin: 64px auto 140px;
      }
 
@@ -552,7 +559,22 @@
          width: 1rem;
      }
 
-     nav {
-         display: none;
+     #courses-section::before {
+         bottom: -15%;
+         left: 0.8%;
      }
+     /* #courses-section {
+        background-color: red;
+     } */
+
+     .courses-container,
+     .quotes-container {
+         grid-template-columns: 1fr;
+     }
+.card-content {
+     min-height: 125px;
+     font-size: 0.9rem;
+}
+
+
  }
