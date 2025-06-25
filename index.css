@@ -61,13 +61,12 @@
 
  /* Custom css strarts from here */
  :root {
-     --main-background: #0c011c;
-     --accent-color: #962dff;
-     --accent-color-light: rgb(237, 214, 255);
-     --accent-background: #3b0579;
-     --card-background: #290054;
-     --card-border: #682998;
-
+     --main-background: #210235; /* was #1A012E */
+     --accent-color: #A84CFF;/* was #962dff */
+     --accent-color-light: #F3DEFF;/* was rgb(237,214,255) */
+     --accent-background: #48067F;/* was #3b0579 */
+     --card-background: #320061;/* was #290054 */
+     --card-border: #8032B8;/* was #682998 */
  }
 
  body {
@@ -190,7 +189,7 @@
      align-items: center;
      justify-content: center;
      gap: 24px;
-     background: linear-gradient(45deg, #300061, #240049, #3e0188);
+     background: linear-gradient(45deg, #300061, #4d00a0, #3e0188);
      border-radius: 56px;
      padding: 24px 28px;
      flex-wrap: wrap;
@@ -216,9 +215,9 @@
  }
 
  button:hover {
-     background-color: #9c72ff;
+     background-color: #b26aff;
      transform: translateY(-4px) translateX(-2px);
-     box-shadow: 2px 4px;
+     box-shadow: 2px 4px #080017;
  }
 
  .scroll-container {
@@ -522,7 +521,7 @@
      #courses-section,
      #quotes-section,
      #joinNow-cta-section {
-        padding: 0 32px;
+         padding: 0 32px;
          margin: 64px auto 140px;
      }
 
@@ -563,6 +562,7 @@
          bottom: -15%;
          left: 0.8%;
      }
+
      /* #courses-section {
         background-color: red;
      } */
@@ -571,10 +571,11 @@
      .quotes-container {
          grid-template-columns: 1fr;
      }
-.card-content {
-     min-height: 125px;
-     font-size: 0.9rem;
-}
+
+     .card-content {
+         min-height: 125px;
+         font-size: 0.9rem;
+     }
 
 
  }
