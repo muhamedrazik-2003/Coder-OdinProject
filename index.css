@@ -138,6 +138,10 @@
      font-weight: 900;
  }
 
+ #nav-dropdown-btn {
+     display: none;
+ }
+
  nav ul {
      display: flex;
      gap: 80px;
@@ -507,8 +511,13 @@
      text-decoration: none;
      font-weight: 800;
  }
+
  @media (max-width:480px) {
-    .floating-quote-left {
+     header {
+         padding: 20px 40px;
+     }
+
+     .floating-quote-left {
          left: -10%;
      }
 
@@ -517,13 +526,42 @@
      }
  }
 
- @media (max-width:1080px) {
-     header {
-         padding: 20px 40px;
+ @media (max-width:600px) {
+     .nav-dropdown {
+         position: relative;
+     }
+
+     #nav-dropdown-btn {
+         display: block;
+         color: white;
+         padding: 8px;
+         background-color: rgb(37, 0, 77);
      }
 
      nav {
-         display: none;
+         position: absolute;
+         top: 105%;
+         right: 0;
+         padding: 8px 56px 8px 24px;
+         border: 1px solid var(--card-border);
+         border-radius: 16px;
+         box-shadow: 2px 4px var(--accent-text);
+         background-color: var(--main-background);
+         z-index: 2;
+     }
+
+     nav ul {
+         flex-direction: column;
+         align-items: start;
+         gap: 16px;
+         padding-left: 0;
+     }
+
+ }
+
+ @media (max-width:1080px) {
+     header {
+         padding: 32px 56px;
      }
 
      header::before {
@@ -535,6 +573,11 @@
          content: "0101";
          font-size: 8rem;
          bottom: 55%;
+     }
+
+     nav ul {
+         gap: 24px;
+         padding-left: 0;
      }
 
      #hero-section,
@@ -598,7 +641,7 @@
      }
 
      .joining-benefits {
-        margin-inline: auto;
+         margin-inline: auto;
          grid-row: 2;
      }
 
@@ -615,9 +658,10 @@
      .joining-benefits h5 {
          margin-bottom: 8px;
      }
+
      footer {
-        font-size: 12px;
-        text-align: center;
+         font-size: 12px;
+         text-align: center;
 
      }
 
