@@ -514,7 +514,7 @@
 
  @media (max-width:480px) {
      header {
-         padding: 20px 40px;
+         padding: 20px 32px !important;
      }
 
      .floating-quote-left {
@@ -537,12 +537,15 @@
          padding: 8px;
          background-color: rgb(37, 0, 77);
      }
+     .hidden {
+        display: none;
+     }
 
      nav {
          position: absolute;
          top: 105%;
          right: 0;
-         padding: 8px 56px 8px 24px;
+         padding: 12px;
          border: 1px solid var(--card-border);
          border-radius: 16px;
          box-shadow: 2px 4px var(--accent-text);
@@ -555,6 +558,10 @@
          align-items: start;
          gap: 16px;
          padding-left: 0;
+     }
+     nav ul li{
+        width: 100%;
+        padding: 8px 56px 8px 24px;
      }
 
  }
