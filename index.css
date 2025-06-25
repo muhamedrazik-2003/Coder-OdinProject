@@ -95,13 +95,15 @@
  }
 
  header {
+     position: relative;
      display: flex;
      align-items: center;
      justify-content: space-between;
      padding: 40px 88px;
+     z-index: 1;
  }
 
- header::before {
+ #hero-section::before {
      content: "010101";
      position: absolute;
      top: 4%;
@@ -113,14 +115,14 @@
      font-family: "Sometype Mono", monospace;
  }
 
- header::after {
+ #hero-section::after {
      content: "010101";
      position: absolute;
-     bottom: 6%;
+     bottom: 4%;
      right: 2%;
      font-size: 14rem;
      color: rgba(255, 255, 255, 0.03);
-     z-index: -1;
+     z-index: -2;
      pointer-events: none;
      font-family: "Sometype Mono", monospace;
  }
@@ -200,7 +202,6 @@
      border-radius: 56px;
      padding: 24px 28px;
      flex-wrap: wrap;
-
  }
 
  #hero-cta p {
@@ -234,7 +235,6 @@
 
  .scroll-track {
      display: flex;
-     animation: scroll-left 20s linear infinite;
  }
 
  .scroll-track .scroll-elements {
@@ -251,15 +251,6 @@
      width: 0.8rem;
  }
 
- @keyframes scroll-left {
-     0% {
-         transform: translateX(0%);
-     }
-
-     100% {
-         transform: translateX(-100%);
-     }
- }
 
  /* courses section */
  #courses-section,
@@ -535,10 +526,11 @@
          display: block;
          color: white;
          padding: 8px;
-         background-color: rgb(37, 0, 77);
+         background-color: rgb(24, 0, 50);
      }
+
      .hidden {
-        display: none;
+         display: none;
      }
 
      nav {
@@ -559,9 +551,10 @@
          gap: 16px;
          padding-left: 0;
      }
-     nav ul li{
-        width: 100%;
-        padding: 8px 56px 8px 24px;
+
+     nav ul li {
+         width: 100%;
+         padding: 8px 56px 8px 24px;
      }
 
  }

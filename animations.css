@@ -1,0 +1,59 @@
+ header {
+    animation: headerEntry 600ms ease-out 50ms  forwards;
+ }
+ @keyframes headerEntry {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+ }
+
+ #hero-section h1 {
+    /* opacity: 0; */
+    animation: headingEntry 600ms ease-out 50ms forwards;
+ }
+ @keyframes headingEntry {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+ }
+ #hero-section h2 {
+    /* opacity: 0; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: subHeadingEntry 600ms ease-out 200ms forwards;
+ }
+ @keyframes subHeadingEntry {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+ }
+ 
+ 
+ 
+ .scroll-track {
+    animation: scroll-left 20s linear infinite;
+ }
+
+ @keyframes scroll-left {
+     0% {
+         transform: translateX(0%);
+     }
+
+     100% {
+         transform: translateX(-100%);
+     }
+ }
