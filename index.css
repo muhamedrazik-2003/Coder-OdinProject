@@ -60,6 +60,9 @@
  }
 
  /* Custom css strarts from here */
+ html {
+    scroll-behavior:smooth;
+ }
  :root {
      --main-text: hsl(6, 100%, 96%);
      --main-background: hsl(267 100% 8% / 1);
@@ -67,6 +70,9 @@
      --accent-background: hsl(268 100% 16% / 1);
      --card-background: hsl(267 90% 13% / 1);
      --card-border: #3a0079;
+ }
+ main {
+    position: relative;
  }
 
  body {
@@ -139,6 +145,16 @@
      background-color: #100031;
      box-shadow: 2px 4px #b08ffd;
      transform: translateY(-4px) translateX(-2px);
+ }
+ .ScrollTop {
+    position: fixed;
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    background-color: #24006c;
+    bottom: 4%;
+    z-index: 10;
+    right: 3%;
  }
 
  #hero-section,

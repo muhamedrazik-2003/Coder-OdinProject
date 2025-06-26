@@ -160,12 +160,12 @@
 
  @keyframes quoteSlideUp {
      from {
-        /* scale: 0.5; */
+         /* scale: 0.5; */
          transform: translateX(-100px);
      }
 
      to {
-        /* scale: 1; */
+         /* scale: 1; */
          opacity: 1;
          transform: translateY(0);
      }
@@ -175,17 +175,20 @@
  .courses-container .course-card:nth-child(1) {
      animation-range: entry 0% cover 30%;
  }
+
  .courses-container .course-card:nth-child(2),
  .quotes-container .quote-card:nth-child(1),
  .quotes-container .quote-card:nth-child(2) {
      animation-range: entry 0% cover 35%;
 
  }
+
  .courses-container .course-card:nth-child(3),
  .quotes-container .quote-card:nth-child(3),
  .quotes-container .quote-card:nth-child(4) {
      animation-range: entry 0% cover 40%;
  }
+
  .courses-container .course-card:nth-child(4) {
      animation-range: entry 0% cover 45%;
  }
@@ -223,5 +226,30 @@
              opacity: 1;
              transform: translateY(0px);
          }
+     }
+
+     @keyframes cardSlideUp {
+         from {
+             /* scale: 0.5; */
+             transform: translateX(-100px);
+         }
+
+         to {
+             /* scale: 1; */
+             opacity: 1;
+             transform: translateY(0);
+         }
+     }
+
+
+     .courses-container .course-card:nth-child(1),
+     .courses-container .course-card:nth-child(2),
+     .quotes-container .quote-card:nth-child(1),
+     .quotes-container .quote-card:nth-child(2),
+     .courses-container .course-card:nth-child(3),
+     .courses-container .course-card:nth-child(4),
+     .quotes-container .quote-card:nth-child(3),
+     .quotes-container .quote-card:nth-child(4) {
+         animation-range: entry 0% cover 25%;
      }
  }
