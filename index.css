@@ -188,7 +188,7 @@
 
  #hero-section h2,
  #joinNow-cta-section h3 {
-     font-size: clamp(18px, 2vw, 24px);
+     font-size: clamp(18px, 1.5vw, 20px);
      margin-bottom: clamp(1.5rem, 4vw, 3rem);
  }
 
@@ -259,7 +259,7 @@
  }
 
  #courses-section {
-     padding-bottom: clamp(48px, 10vw, 172px);
+     padding-bottom: clamp(60px, 10vw, 172px);
      margin-bottom: 0;
      z-index: 1;
  }
@@ -564,12 +564,12 @@
          padding: 32px 56px;
      }
 
-     header::before {
+     #hero-section::before {
          content: "0101";
          font-size: 8rem;
      }
 
-     header::after {
+     #hero-section::after {
          content: "0101";
          font-size: 8rem;
          bottom: 55%;
