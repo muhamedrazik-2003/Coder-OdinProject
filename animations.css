@@ -179,6 +179,20 @@
  }
 
  @media (max-width:1080px) {
+     #hero-cta {
+         transform: translateY(300px);
+     }
+
+     @keyframes heroCtaEntry {
+         0% {
+             transform: translateY(300px);
+         }
+
+         100% {
+             transform: translateY(0px);
+         }
+     }
+
      #hero-cta>div {
          transform: translateY(-600px);
          /* animation: heroCtaContentEntry 500ms ease-out 750ms forwards; */
@@ -216,7 +230,7 @@
      @keyframes cardSlideUp {
          from {
              /* scale: 0.5; */
-             transform: translateX(-100px);
+             transform: translateX(-300px);
          }
 
          to {
@@ -235,21 +249,10 @@
      .courses-container .course-card:nth-child(4),
      .quotes-container .quote-card:nth-child(3),
      .quotes-container .quote-card:nth-child(4) {
-         animation-range: entry 0% cover 30%;
+         animation-range: entry 0% cover 50%;
      }
  }
 
- @media (max-width:480px) {
-     #hero-cta {
-         transform: translateY(300px);
-     }
-      @keyframes heroCtaEntry {
-     0% {
-         transform: translateY(300px);
-     }
-
-     100% {
-         transform: translateY(0px);
-     }
- }
- }
+ /* @media (max-width:480px) {
+    
+ } */
