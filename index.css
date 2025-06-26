@@ -177,6 +177,7 @@
 
  #hero-section {
      margin-top: clamp(32px, 5vw, 60px);
+     z-index: inherit;
  }
 
  #hero-section h1,
@@ -202,6 +203,7 @@
      border-radius: 56px;
      padding: 24px 28px;
      flex-wrap: wrap;
+     z-index: 2;
  }
 
  #hero-cta p {

@@ -27,7 +27,7 @@
     }
  }
  #hero-section h2 {
-    /* opacity: 0; */
+    opacity: 0;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation: subHeadingEntry 600ms ease-out 200ms forwards;
  }
