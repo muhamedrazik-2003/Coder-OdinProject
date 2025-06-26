@@ -103,30 +103,6 @@
      z-index: 1;
  }
 
- #hero-section::before {
-     content: "010101";
-     position: absolute;
-     top: 4%;
-     left: 2%;
-     font-size: 14rem;
-     color: rgba(255, 255, 255, 0.03);
-     z-index: 0;
-     pointer-events: none;
-     font-family: "Sometype Mono", monospace;
- }
-
- #hero-section::after {
-     content: "010101";
-     position: absolute;
-     bottom: 4%;
-     right: 2%;
-     font-size: 14rem;
-     color: rgba(255, 255, 255, 0.03);
-     z-index: -2;
-     pointer-events: none;
-     font-family: "Sometype Mono", monospace;
- }
-
  #logo {
      color: #7530ff;
      display: flex;
@@ -177,7 +153,31 @@
 
  #hero-section {
      margin-top: clamp(32px, 5vw, 60px);
-     z-index: inherit;
+     z-index: 1;
+ }
+
+ #hero-section::before {
+     content: "010101";
+     position: absolute;
+     top: 4%;
+     left: 2%;
+     font-size: 14rem;
+     color: rgba(255, 255, 255, 0.03);
+     z-index: -1;
+     pointer-events: none;
+     font-family: "Sometype Mono", monospace;
+ }
+
+ #hero-section::after {
+     content: "010101";
+     position: absolute;
+     bottom: 4%;
+     right: 2%;
+     font-size: 14rem;
+     color: rgba(255, 255, 255, 0.03);
+     z-index: -1;
+     pointer-events: none;
+     font-family: "Sometype Mono", monospace;
  }
 
  #hero-section h1,
@@ -496,7 +496,7 @@
      align-items: center;
      padding: 12px;
      background: #160041;
-     color: #aa34ff;
+     color: #deb1fd;
  }
 
  footer a {
@@ -505,76 +505,9 @@
      font-weight: 800;
  }
 
- @media (max-width:480px) {
-     header {
-         padding: 20px 32px !important;
-     }
-
-     .floating-quote-left {
-         left: -10%;
-     }
-
-     .floating-quote-right {
-         right: -10%;
-     }
- }
-
- @media (max-width:600px) {
-     .nav-dropdown {
-         position: relative;
-     }
-
-     #nav-dropdown-btn {
-         display: block;
-         color: white;
-         padding: 8px;
-         background-color: rgb(24, 0, 50);
-     }
-
-     .hidden {
-         display: none;
-     }
-
-     nav {
-         position: absolute;
-         top: 105%;
-         right: 0;
-         padding: 12px;
-         border: 1px solid var(--card-border);
-         border-radius: 16px;
-         box-shadow: 2px 4px var(--accent-text);
-         background-color: var(--main-background);
-         z-index: 2;
-     }
-
-     nav ul {
-         flex-direction: column;
-         align-items: start;
-         gap: 16px;
-         padding-left: 0;
-     }
-
-     nav ul li {
-         width: 100%;
-         padding: 8px 56px 8px 24px;
-     }
-
- }
-
  @media (max-width:1080px) {
      header {
          padding: 32px 56px;
-     }
-
-     #hero-section::before {
-         content: "0101";
-         font-size: 8rem;
-     }
-
-     #hero-section::after {
-         content: "0101";
-         font-size: 8rem;
-         bottom: 55%;
      }
 
      nav ul {
@@ -586,6 +519,15 @@
      #courses-section,
      #joinNow-cta-section {
          padding-inline: 32px;
+     }
+
+     #hero-section::before,
+     #hero-section::after {
+         font-size: 8rem;
+     }
+
+     #hero-section::after {
+         bottom: 25%;
      }
 
      #hero-cta {
@@ -667,4 +609,66 @@
 
      }
 
+ }
+
+ @media (max-width:600px) {
+     .nav-dropdown {
+         position: relative;
+     }
+
+     #nav-dropdown-btn {
+         display: block;
+         color: white;
+         padding: 8px;
+         background-color: rgb(24, 0, 50);
+     }
+
+     .hidden {
+         display: none;
+     }
+
+     nav {
+         position: absolute;
+         top: 105%;
+         right: 0;
+         padding: 12px;
+         border: 1px solid var(--card-border);
+         border-radius: 16px;
+         box-shadow: 2px 4px var(--accent-text);
+         background-color: var(--main-background);
+         z-index: 2;
+     }
+
+     nav ul {
+         flex-direction: column;
+         align-items: start;
+         gap: 16px;
+         padding-left: 0;
+     }
+
+     nav ul li {
+         width: 100%;
+         padding: 8px 56px 8px 24px;
+     }
+
+ }
+
+ @media (max-width:480px) {
+     header {
+         padding: 20px 32px !important;
+     }
+
+     #hero-section::before,
+     #hero-section::after {
+         content: "0101";
+         font-size: 6rem;
+     }
+
+     .floating-quote-left {
+         left: -10%;
+     }
+
+     .floating-quote-right {
+         right: -10%;
+     }
  }
