@@ -1,18 +1,3 @@
- /* header {
-     animation: headerEntry 600ms ease-out 50ms forwards;
- }
-
- @keyframes headerEntry {
-     0% {
-         opacity: 0;
-         transform: translateY(-100px);
-     }
-
-     100% {
-         opacity: 1;
-         transform: translateY(0px);
-     }
- } */
  .text-wrapper {
      overflow: hidden;
      display: inline-block;
@@ -250,6 +235,21 @@
      .courses-container .course-card:nth-child(4),
      .quotes-container .quote-card:nth-child(3),
      .quotes-container .quote-card:nth-child(4) {
-         animation-range: entry 0% cover 25%;
+         animation-range: entry 0% cover 30%;
      }
+ }
+
+ @media (max-width:480px) {
+     #hero-cta {
+         transform: translateY(300px);
+     }
+      @keyframes heroCtaEntry {
+     0% {
+         transform: translateY(300px);
+     }
+
+     100% {
+         transform: translateY(0px);
+     }
+ }
  }
